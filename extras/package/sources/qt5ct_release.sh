@@ -45,8 +45,8 @@ tar vcjf ${TARBALL}.tar.bz2 ${TARBALL}/
 echo "Removing temporary directory.."
 rm -rf ${TARBALL}
 
-echo "Creating md5 sum.."
-md5sum -b ${TARBALL}.tar.bz2 > ${TARBALL}.tar.bz2.md5sum
+#echo "Creating md5 sum.."
+#md5sum -b ${TARBALL}.tar.bz2 > ${TARBALL}.tar.bz2.md5sum
 
 echo "Moving released files.."
 cd ..
@@ -54,12 +54,12 @@ if [ ! -d "files" ]; then
 mkdir files
 fi
 mv cache/${TARBALL}.tar.bz2 files/
-mv cache/${TARBALL}.tar.bz2.md5sum files/
+#mv cache/${TARBALL}.tar.bz2.md5sum files/
 
 echo ""
 echo "****** RELEASED FILES *******"
 echo "Tarball: ${TARBALL}.tar.bz2"
-echo "MD5: ${TARBALL}.tar.bz2.md5sum"
+#echo "MD5: ${TARBALL}.tar.bz2.md5sum"
 echo "*****************************"
 echo ""
 echo "Finished"
