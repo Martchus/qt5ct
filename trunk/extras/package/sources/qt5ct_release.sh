@@ -9,7 +9,7 @@ cd cache
 
 echo "Receiving sources.."
 if [ ! -d "-svn" ]; then
-svn checkout svn://svn.code.sf.net/p/qt5ct/code/trunk/qt5ct qt5ct-svn
+svn checkout https://svn.code.sf.net/p/qt5ct/code/trunk/qt5ct qt5ct-svn
 fi
 
 cd qt5ct-svn
